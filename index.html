@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>TRY &amp; GO</title>
+<link rel="shortcut icon" href="images/icon.ico" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"href="css/flexslider.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+ <script defer src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#mwt_mwt_slider_scroll').localScroll(1000);
+	$('#nav').localScroll(1000);
+	$('.try').localScroll(1000);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('#img').parallax("50%", 0.1);
+	$('#third').parallax("50%", 0.1);
+	$('#fifth').parallax("50%", 0.1);
+	$('#wash').parallax("50%", 0.1);
+	$('#ss').parallax("50%", 0.1);
+
+})
+</script>
+  <!-- FlexSlider -->
+
+  
+  <script type="text/javascript">
+  // Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+  </script>
+<script>
+$(function(){
+	var w = $("#mwt_slider_content").width();
+	$('#mwt_slider_content').css('height', ($(window).height() -0) + 'px' ); 
+	
+	$("#mwt_fb_tab").mouseover(function(){
+		if ($("#mwt_mwt_slider_scroll").css('left') == '-'+w+'px')
+		{
+			$("#mwt_mwt_slider_scroll").animate({ left:'0px' }, 600 ,'swing');
+		}
+	});
+	
+	
+	$("#mwt_slider_content").mouseleave(function(){
+		$("#mwt_mwt_slider_scroll").animate( { left:'-'+w+'px' }, 600 ,'swing');	
+	});	
+});
+
+</script>
+
+
+</head>
+
+<body>
+ <div id="mwt_mwt_slider_scroll">
+      <div id="mwt_fb_tab">
+			<span>M</span>
+			<span>E</span>
+			<span>N</span>
+			<span>U</span>	
+		</div>
+		<div id="mwt_slider_content">
+        <ul>
+    <li  class="a"><a href="#intro"></a></li>
+    <li  class="b"><a href="#second"></a></li>
+     <li class="c"><a href="#third"></a></li>
+     <li  class="d"><a href="#ss"></a></li>
+    <li class="e"><a href="#img"></a></li>
+    <li class="f"><a href="http://facebook.com/tryandgo.socks" target="_blank"></a></li> 
+    <li class="g"><a href="http://twitter.com/TRYxGO" target="_blank"></a></li>
+    <li class="h"><a href="http://tw.user.bid.yahoo.com/tw/booth/Y6169111172" target="_blank"></a></li>
+    <li class="i"><a href="mailto:tryandgo@outlook.com" ></a></li>  
+</ul>
+        </div>
+        </div>
+	
+	<ul id="nav">
+    
+		<li><a href="#intro" ></a></li>
+        <li><a href="#fifth" ></a></li>
+	    <li><a href="#second" ></a></li> 
+	    <li><a href="#third" ></a></li>
+        <li><a href="#wash"></a></li>
+	    <li><a href="#ss"></a></li>
+        <li><a href="#img"></a></li>
+        <li><a href="#footer" ></a></li>
+	</ul>
+	    
+	<div id="intro">
+		<div class="story">
+      <a href="http://www.tryandgo.url.tw/"><div class="logo"></div></a>
+</div>
+        	<div class="try"> 
+              
+		<p>If you are going to try, go all the way.</p>
+        <p>嘗試不一樣的襪子，感受不同的生活情緒，然後出發。</p>
+        <div id="n">
+        <ul>
+        <li class="f"><a href="http://facebook.com/tryandgo.socks" target="_blank"></a></li>
+        <li class="t"><a href="http://twitter.com/TRYxGO" target="_blank"></a></li>
+      
+       </ul> 
+       </div>
+        <a href="#fifth" ><h1></h1></a>
+            </div>
+            
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+
+      <div id="fifth">
+		<div class="story">
+	<div id="container" class="cf">
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/style.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/style1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/style2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/style3.jpg" />
+  	    		</li>
+                	<li>
+  	    	    <img src="images/style4.jpg" />
+  	    		</li>
+                <li>
+  	    	    <img src="images/style5.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      </div>
+       </div>
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+	
+   
+	<div id="second">
+		<div class="story">
+          <div class="float-left">
+	            <h2>About Us</h2>
+                <p>兩個喜愛襪子的人，希望能做出增添生活色彩的襪子。兩人三腳同心協力，嘗試各種不同的可能，穿上獨特的想法及態度，踏出每一步！</p>
+                <h2>TRY&amp;GO</h2>
+	            <p>腳是人的最根部，也是站立的基礎，襪子則是腳的第二層皮膚，卻容易被忽略。生活中許多的細節都被遺忘，讓這些細節都有屬於自己的故事，使生活多一些樂趣。</p>
+                <p>給害羞人的腳，適當點綴整體造型，雖然豐富但不複雜，搶眼卻不搶鋒頭。就像隱藏在褲管與裙子裡的發光物 ，簡單、特別又實穿。</p>
+	        </div>
+	    	
+	        </div>
+	    </div> <!--.story-->   
+	</div> <!--#second-->
+    
+   
+	<div id="third">
+         <div class="story">
+          <div class="float-right">
+	            <h2>Made In Taiwan</h2>
+	            <p>彰化社頭鄉為襪子的故鄉，製作絕大多數在台灣的襪子，編織 人工縫合 定型等過程都是經過工廠的細心檢查，品質保證。</p>
+	            <p>紗線多選擇以舒適棉線製造，其次為尼龍紗，讓襪子擁有美麗的顏色。襪子針數為200針，可以細緻做出圖案。</p>
+                <h2>原料色紗</h2>
+                <p>襪子結構分為兩層，底紗與面紗，底紗是為了讓襪子有彈性，材料為彈性纖維，而大部份主要面紗為為棉紗，使用在較容易出汗的腳底等部位，棉紗除了能夠讓悶悶的腳丫深呼吸，也比較吸汗！圖案部份為尼龍紗，使用尼龍彈性紗代替棉紗，以維持襪子彈性與更增加色彩飽和度，每雙襪子穿起來清爽又亮眼！</p>
+	        </div>
+  
+	    </div> <!--.story-->
+       </div><!--#third-->
+
+       <div id="wash">
+      
+       <div class="story">
+       <div class="float-left"><h2>襪子的青春</h2>
+       <p>為了腳的乾淨與美觀，幾乎每天都要穿襪子及洗襪子。
+      建議用以下方來維護你的襪子，讓襪子永保青春！</p>
+       </div>
+       <div id="w">
+       
+<ul>
+    <li ><a><img src="images/w1.gif"/></a></li>
+    <li ><a><img src="images/w2.gif"/></a></li>
+       <li><a><img src="images/w5.gif"/></a></li>
+     <li><a><img src="images/w4.gif"/></a></li>
+    <li ><a><img src="images/w3.gif"/></a></li>
+</ul>
+<ul>
+<li><a><div class="container">
+  <div class="button">
+<span class="label">Dry</span> <span class="label">不可烘乾</span>
+</div>
+</div></a></li>
+
+<li><a><div class="container">
+  <div class="button">
+<span class="label">bleach</span> <span class="label">不可漂白</span>
+</div>
+</div></a></li>
+
+<li><a><div class="container">
+  <div class="button">
+<span class="label">Iron</span> <span class="label">不可熨燙</span>
+</div>
+</div></a></li>
+
+<li><a><div class="container">
+  <div class="button">
+<span class="label">Wash</span> <span class="label">常溫40℃水洗</span>
+</div>
+</div></a></li>
+
+<li><a><div class="container">
+  <div class="button">
+<span class="label">Dry Clean</span> <span class="label">限石油類乾洗</span>
+</div>
+</div></a></li>
+</ul>
+</div>
+
+       </div> <!--.story-->
+       </div><!--#wash-->
+
+  <div id="ss"> 
+		<div class="story">
+     
+	<div class="float-left"><h2>Socks</h2>
+       <p>請滑動你的滑鼠，看看不同角度的襪子！</p>
+      
+       </div>
+       
+	     
+<div id="socks">
+       <div id="s"> 
+        <ul>
+    <li class=><a><div class="s0img"></div></a></li>
+    <li class=><a><div class="s1img"></div></a></li>
+    <li class=><a><div class="s2img"></div></a></li>
+    <li class=><a><div class="s3img"></div></a></li>
+     <li class=><a><div class="s4img"></div></a></li>
+      <li class=><a><div class="s5img"></div></a></li>
+       <li class=><a><div class="s6img"></div></a></li>
+        <li class=><a><div class="s7img"></div></a></li>
+         <li class=><a><div class="s8img"></div></a></li>
+          <li class=><a><div class="s9img"></div></a></li>
+           <li class=><a><div class="s10img"></div></a></li>
+            <li class=><a><div class="s11img"></div></a></li>
+             <li class=><a><div class="s12img"></div></a></li>
+              <li class=><a><div class="s13img"></div></a></li>
+               <li class=><a><div class="s14img"></div></a></li>
+                <li class=><a><div class="s15img"></div></a></li>
+
+</ul>
+</div>
+        </div>
+    </div><!--.story-->
+    </div><!--.#ss-->
+    <div id="img">
+    
+       <div id="gif"> 
+        <ul>
+    <li class="a"><a></a></li>
+    <li class="b"><a></a></li>
+    <li class="c"><a></a></li>
+    <li class="d"><a></a></li>
+    <li class="e"><a></a></li>
+    <li class="f"><a></a></li>
+    <li class="g"><a></a></li>
+    <li class="h"><a></a></li>
+    <li class="i"><a></a></li>
+    <li class="j"><a></a></li>
+    <li class="k"><a></a></li>
+    <li class="l"><a></a></li>
+    <li class="m"><a></a></li>
+    <li class="n"><a></a></li>
+    <li class="o"><a></a></li>
+  
+     
+  
+</ul>
+</div>
+      
+	        </div>
+	  
+	</div> <!--#img-->
+<div id="footer">
+		<div class="story">
+	        <iframe width="80%" height="500" src="http://www.youtube.com/embed/psEAJLbsO-M" frameborder="0" allowfullscreen></iframe>
+           
+        </div><!--.story-->
+    </div><!--#footer-->
+  <p id="copy">Copyright ⓒ 2012 TRY&amp;GO.</p>
+  
+	
+        
+ 
+</body>
+</html>
